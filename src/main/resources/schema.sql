@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS Mascota (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  nombre VARCHAR(15) NOT NULL,
+  fecha_nac DATE NOT NULL,
+  raza VARCHAR(30),
+  peso DOUBLE,
+  tiene_chip BOOLEAN,
+  url_foto VARCHAR(255)
+);
